@@ -1,8 +1,18 @@
 aid: bitauto
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/bitauto.png
 name: Bitauto
-description: 'Bitauto is a company surfaced as a portfolio company of dcm-ventures and added to the API
-  Evangelist network as a stub for enrichment. Sector: consumer. This profile is a lead awaiting the enrichment
-  pipeline.'
+description: 'Bitauto (易车, Yiche) is one of China''s largest automotive internet companies, founded in 2000 with the mission of making car ownership simpler. It operates consumer-facing platforms that provide car buyers with pricing, reviews, specifications, and automotive news across new and used vehicles, alongside an enterprise EP (dealer) platform offering web-based digital marketing and CRM applications to Chinese automobile dealers. Bitauto runs regional informational portals across 20+ countries cataloging Chinese car brands. This profile was surfaced as a portfolio company of DCM Ventures; as of enrichment Bitauto publishes no public developer API, SDK, or documentation surface.'
 url: https://raw.githubusercontent.com/api-evangelist/bitauto/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,10 +22,15 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
 - Consumer
+- Automotive
+- Cars
+- China
+- Marketplace
+- Digital Marketing
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +38,14 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/bitauto-domain-security.yml
 - type: Website
   url: https://www.bitauto.com/choose-c/
+- type: PrivacyPolicy
+  url: https://www.bitauto.com/zh-it/privacy-policy/
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
